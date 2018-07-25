@@ -4,7 +4,7 @@
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
 
-export PATH=~/Flutter/flutter/bin:$PATH
+export PATH=$PATH:~/Development/flutter/bin/
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -73,6 +73,8 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
+
+eval "$(rbenv init -)"
 
 # User configuration
 
