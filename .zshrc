@@ -4,8 +4,11 @@
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
 
-# FLutter 
+# Flutter 
 export PATH=$PATH:~/Development/flutter/bin/
+
+# Jetbrains
+export PATH=$PATH:~/Jetbrains/
 
 # GO specifics
 export PATH=$PATH:$(go env GOPATH)/bin
