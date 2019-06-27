@@ -4,6 +4,8 @@
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
 
+export COBALT_2_ICON=λ
+
 # Flutter 
 export PATH=$PATH:~/Development/flutter/bin/
 
