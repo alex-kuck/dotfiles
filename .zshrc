@@ -75,6 +75,7 @@ plugins=(
   lighthouse
   git-flow
   jsontools
+  kubectl
   ng
   node
   npm
