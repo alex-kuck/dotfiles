@@ -12,6 +12,9 @@ export PATH=$PATH:~/Development/flutter/bin/
 # Jetbrains
 export PATH=$PATH:~/Jetbrains/
 
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
+
 # GO specifics
 export PATH=$PATH:$(go env GOPATH)/bin
 export GOPATH=$(go env GOPATH)
@@ -43,7 +46,7 @@ ZSH_THEME="cobalt2"
 # DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
-# export UPDATE_ZSH_DAYS=13
+export UPDATE_ZSH_DAYS=1
 
 # Uncomment the following line to disable colors in ls.
 # DISABLE_LS_COLORS="true"
@@ -75,16 +78,18 @@ ZSH_THEME="cobalt2"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+  brew
+  docker
+  docker-compose
   git
-  lighthouse
   git-flow
   jsontools
   kubectl
-  ng
   node
   npm
   sudo
   yarn
+  zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -122,4 +127,5 @@ eval "$(rbenv init -)"
 
 # Fortune on startup
 # fortune softwareengineering | cowsay -f happy-whale | lolcat
+
 fortune softwareengineering | cowsay -f fox | lolcat
