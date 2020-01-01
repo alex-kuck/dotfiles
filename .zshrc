@@ -6,12 +6,17 @@ export ZSH=~/.oh-my-zsh
 
 export COBALT_2_ICON=λ
 
+# Ruby Env
+eval "$(rbenv init -)"
+export PATH=~/.rbenv/shims:$PATH
+
 # Flutter 
 export PATH=$PATH:~/Development/flutter/bin/
 
 # Jetbrains
 export PATH=$PATH:~/Jetbrains/
 
+# JEnv
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
 
@@ -93,8 +98,6 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
-
-eval "$(rbenv init -)"
 
 # User configuration
 
