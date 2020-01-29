@@ -9,6 +9,7 @@ export COBALT_2_ICON=λ
 # Ruby Env
 eval "$(rbenv init -)"
 export PATH=~/.rbenv/shims:$PATH
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
 
 # Flutter 
 export PATH=$PATH:~/Development/flutter/bin/
@@ -98,6 +99,7 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
+source ~/.bash_aliases
 
 # User configuration
 

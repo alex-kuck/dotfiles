@@ -1,0 +1,1 @@
+alias brewup='brew upgrade && brew update && brew cleanup'
